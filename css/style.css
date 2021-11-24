@@ -14,9 +14,11 @@ li {
 }
 
 .container {
-	max-width: 1125px;
+	max-width: 1160px;
 	margin: 0 auto;
 }
+
+ /*header start*/
 
  .header {
  	position: fixed;
@@ -29,9 +31,10 @@ li {
 .header__body {
 	display: flex;
 	align-items: center;
+	max-width: 1125px;
 }
 
-.header__logo {
+.logo {
 	width: 79px;
 	height: 79px;
 }
@@ -46,6 +49,10 @@ li {
 	margin: 0 -20px;	
 }
 
+.menu__item {
+	padding: 0 20px;
+}
+
 .menu__link {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
@@ -53,11 +60,6 @@ li {
 	line-height: 16px;
 	color: #150101;
 	opacity: 0.6;
-	padding: 0 20px;
-}
-
-.menu__link a {
-	color: #150101;
 }
 	
 .menu__link_active {
@@ -68,11 +70,6 @@ li {
 	color: #D23166;
 	opacity: 1;
 }
-
-.menu__link_active a {
-	color: #D23166;
-}
-
 
 .header__button {
 	margin-left: auto;
@@ -92,115 +89,64 @@ li {
 	display: inline-block;
 }
 
+/*header end*/
 
 
+/*main start*/
 
-
-/* * {
- 	margin: 0;
- 	padding: 0;
- 	border:0;
- 	box-sizing: border-box;
- }
-
-a {
-	text-decoration: none;
+.info {
+	padding: 159px 0 65px 0;
+	background-color: #ffedf3;
 }
 
-li {
-	list-style: none;
-}
-
-.container {
-	max-width: 1125px;
-	margin: 0 auto;
-}
-
- .header {
- 	position: fixed;
- 	top: 10px;
- 	width: 100%;
-}
-.container {
-
-}
-.header__body {
+.info__body {
 	display: flex;
 	align-items: center;
 }
-.header__logo {
-	
-}
-.logo {
-	width: 79px;
-	height: 79px;
-				/* здесь мы ограничили картинку по размерам,
-					 также если мы не пропишем внизу к картинке max-width: 100%; то
-					 контент сломается если мы вставим картинку больше 79 пикселей*/
+
+.info__offer {
+	flex: 0 1 665px;
 }
 
-.logo img {
-	max-width: 100%;  это мы прописали для того
-	 					  чтобы картинка больше 79 пикселей
-	  						вместилась в шапку сайта(если мы фото поменяем),
-	   							если не пропишем этот контент сломается
-	   							так как картинка больше 79 пикселей  
-}
-
-.header__menu {
-	margin-left: 266px;
-}
-.menu {
-	
-}
-
-.menu__list {
-	display: flex;
-	align-items: center;
-	margin: 0 -20px;	
-}
-
-.menu__link {
+.info__small-text {
 	font-family: 'Roboto', sans-serif;
-	font-weight: 400;
+	font-weight: 500;
 	font-size: 14px;
 	line-height: 16px;
-	color: #150101;
+	letter-spacing: 0.1em;
+	color: #0F0101;
+	margin-bottom: 6px;
+}
+
+.info__title {
+	font-family: 'Fredoka One', sans-serif;
+	font-weight: 400;
+	font-size: 57.33px;
+	line-height: 120.5%;
+	color: #0F0101;
+	opacity: 0.9;
+	margin-bottom: 35px;
+}
+
+.info__title_pink {
+	color: #D23166;
+}
+
+.info__text {
+	font-family: 'Hind Madurai', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 27px;
+	color: #0F0101;
 	opacity: 0.6;
-	padding: 0 20px;
+	margin-bottom: 50px;
+	max-width: 523px;
 }
 
-.menu__link a {
-	color: #150101;
-}
-	
-.menu__link_active {
-	font-family: 'Roboto', sans-serif;
-	font-weight: 700;
-	font-size: 15px;
-	line-height: 18px;
-	color: #D23166;
-	opacity: 1;
+.info__decoration {
+	max-width: 509px;
+	height: auto;
 }
 
-.menu__link_active a {
-	color: #D23166;
-}
+/*main end*/
 
-
-.header__button {
-	margin-left: auto;
-}
-.button {
-	width: 165px;
-	height: 49px;
-	background: #D23166;
-	border-radius: 5px;
-	font-family: 'Hind Madurai',sans-serif;
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 22px;
-	color: #FAFAFA;
-	padding: 14px 0;	
-	text-align: center;
-}*/
