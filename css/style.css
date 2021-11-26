@@ -148,5 +148,68 @@ li {
 	height: auto;
 }
 
+/*triggers start*/
+
+.triggers {
+	padding: 100px 0;
+}
+
+.triggers__body {
+	max-width: 1117px;
+}
+
+.triggers__row {
+	display: flex;
+	justify-content: center;
+	margin: 0 -19px;
+}
+
+.triggers__column {
+	padding:0 19px;
+	flex: 0 1 25%;
+	cursor: pointer;
+}
+
+.triggers__item:hover {
+	box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.03);
+	border: 1px solid #fff;
+	transition-duration: 600ms,600ms;
+	transition-property: box-shadow,border;
+}
+
+.triggers__item {
+	border-radius: 7px;
+	border: 1px solid rgba(0, 0, 0, 0.03);
+	text-align: center;
+	padding: 30px 26px;
+	transition-duration: 1s;
+	transition-property: all;
+}
+
+.triggers__icon {
+	margin-bottom: 25px;
+}
+
+.triggers__title {
+	font-family: 'Hind Madurai', sans-serif;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 28px;
+	color: #000000;
+	margin-bottom: 10px;
+}
+
+.triggers__text {
+	font-family: 'Hind Madurai', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 19px;
+	color: #000000;
+	opacity: 0.6;
+}
+
+/*triggers end*/
+
+
 /*main end*/
 
