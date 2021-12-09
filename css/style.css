@@ -93,7 +93,7 @@ li {
 
 
 /*main start*/
-
+/*info start*/
 .info {
 	padding: 159px 0 65px 0;
 	background-color: #ffedf3;
@@ -148,6 +148,7 @@ li {
 	height: auto;
 	width: 100%;
 }
+/*info end*/
 
 /*triggers start*/
 
