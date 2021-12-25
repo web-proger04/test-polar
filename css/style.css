@@ -772,9 +772,6 @@
 	padding: 5px 0;
 }
 
-.item-footer {
-}
-
 .item-footer__link {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
@@ -850,29 +847,20 @@
 	padding: 0 8px;
 }
 
-.item-bcards {
-}
-
-.item-bcards__link {
-}
-
-
 /*footer end*/
 
 /*main end*/
 
 
 /*Respontive*/
-
-/*992px - 1200px*/
 @media screen and (max-width: 1200px) {
 	.container {
 		max-width: 960px;
 	}
 
-	.header {
+	/*.header {
 		background-color: red;
-	}
+	}*/
 
 	.header__menu {
 		margin-left: auto;
@@ -887,15 +875,14 @@
 	}
 }
 
-/*768px - 992px*/
 @media screen and (max-width: 992px) {
 	.container {
 		max-width: 720px;
 	}
 
-	.header {
+	/*.header {
 		background-color: black;
-	}
+	}*/
 
 	.header__menu  {
 		display: none;
@@ -984,7 +971,6 @@
 	}
 }
 
-/*576px - 768px*/
 @media screen and (max-width: 768px) {
 	.container {
 		max-width: 540px;
@@ -994,9 +980,9 @@
 		font-size: 30px;
 	}
 
-	.header {
+	/*.header {
 		background-color: green;
-	}
+	}*/
 
 	.info {
 		padding: 159px 0 0 0;
@@ -1073,7 +1059,6 @@
 	}
 }
 
-/*320px - 576px*/
 @media screen and (max-width: 576px) {
 	.container {
 		max-width: 90%;
@@ -1087,9 +1072,9 @@
 		max-width: 100px;
 	}
 
-	.header {
+	/*.header {
 		background-color: yellow;
-	}
+	}*/
 
 	.info__title {
 		font-size: 31.33px;
@@ -1103,8 +1088,20 @@
 		padding: 60px 0;
 	}
 
+	.triggers__row {
+		margin: 0;
+	}
+
 	.triggers__column:nth-child(2) {
 		margin-top: 40px;
+	}
+
+	.item-triggers__title {
+		font-size: 15px;
+	}
+
+	.item-triggers__text {
+		font-size: 12px;
 	}
 
 	.oatmeal__body {
@@ -1135,13 +1132,21 @@
 		width: 60px;
 	}
 
+	.cream-ice__info {
+		margin: 0;
+		flex: 1 0 59%;
+	}
+
 	.cream-ice__title {
 		font-size: 18px;
 	}
 
-	.cream-ice__info {
-		margin: 0;
-		flex: 1 0 59%;
+	.stock__price {
+		font-size: 20px;
+	}
+
+	.stock__price_line-through {
+		font-size: 15px;
 	}
 
 	.cream-ice__decoration {
@@ -1162,6 +1167,10 @@
 
 	.feedback__account {
 		margin-right: 0;
+	}
+
+	.content-feedback__title {
+		font-size: 16px;
 	}
 
 	.account-feedback__slider {
@@ -1208,6 +1217,10 @@
 
 	.footer {
 		padding: 60px 0;
+	}
+
+	.footer__title {
+		font-size: 14px;
 	}
 
 	.search-email__input {
