@@ -1122,6 +1122,11 @@
 
 	.product__list {
 		flex-wrap: wrap;
+		margin: 0 -7px;
+	}
+
+	.product__item {
+    	padding: 0 7px;
 	}
 
 	.item-product__link {
