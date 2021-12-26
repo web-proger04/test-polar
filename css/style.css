@@ -5,6 +5,7 @@
  	box-sizing: border-box;
  	text-decoration: none;
 	list-style: none;
+	outline: none; /*это для того чтобы убрать границу(контур) у элемента при фокусе*/
  } 
 
 .container {
@@ -66,6 +67,7 @@
 .header__button {
 	margin-left: auto;
 }
+
 .button {
 	width: 165px;
 	height: 49px;
@@ -79,6 +81,18 @@
 	padding: 14px 0;	
 	text-align: center;
 	display: block;
+	transition-duration: 700ms;
+}
+
+.button:hover {
+	box-shadow: 0 0 18px rgb(210, 49, 102, 0.8);
+	transition-duration: 500ms; /*время псевдоклассам наследуется*/
+}
+
+.button:active {
+	box-shadow: 0 0 18px rgb(209, 38, 94);
+	background-color: #d1265e;
+	transition-duration: 500ms; /*время псевдоклассам наследуется(здесь будет 500ms)*/
 }
 
 /*header end*/
@@ -86,6 +100,7 @@
 
 /*main start*/
 /*info start*/
+
 .info {
 	padding: 159px 0 65px 0;
 	background-color: #ffedf3;
@@ -142,6 +157,7 @@
 .info__decoration img {
 	max-width: 100%;
 }
+
 /*info end*/
 
 /*triggers start*/
@@ -436,15 +452,18 @@
 .account-feedback__info {
 	margin-bottom: 50px;
 }
+
 .info-feedback {
 	display: flex;
 	align-items: center;
 }
+
 .info-feedback__logo {
 	max-width: 59px;
     max-height: 58px;
     width: 100%;
 }
+
 .info-feedback__content {
 	margin-left: 11px;
 }
@@ -586,10 +605,6 @@
     border-radius: 40px;
 }
 
-.order__decoration img{
-	
-}
-
 .order__info {
     flex: 0 1 54%;
     margin-left: auto;
@@ -681,6 +696,12 @@
 	padding: 28px 0 28px 30px;
 	/*width: 539px;*/
 	width: 100%;
+	transition-duration: 700ms;
+}
+
+.search-form__input:focus {
+	box-shadow: 0 0 40px rgb(0,0,0, 0.2);
+	transition-duration: 500ms;
 }
 
 .search-form__button {
@@ -700,6 +721,12 @@
 	background-color: #D64374;
 	border-radius: 5px;
 	cursor: pointer;
+	transition-duration: 700ms;
+}
+
+.button-small:active {
+	background-color: #d1265e;
+	transition-duration: 500ms;
 }
 
 /*connection end*/
@@ -833,6 +860,12 @@
 	background: #D23166;
 	border-radius: 5px;
 	cursor: pointer;
+	transition-duration: 700ms;
+}
+
+.search-email__button:active {
+	background-color: #d1265e;
+	transition-duration: 500ms;
 }
 
 .footer__bcards {
@@ -858,10 +891,6 @@
 		max-width: 960px;
 	}
 
-	/*.header {
-		background-color: red;
-	}*/
-
 	.header__menu {
 		margin-left: auto;
 	}
@@ -879,10 +908,6 @@
 	.container {
 		max-width: 720px;
 	}
-
-	/*.header {
-		background-color: black;
-	}*/
 
 	.header__menu  {
 		display: none;
@@ -980,10 +1005,6 @@
 		font-size: 30px;
 	}
 
-	/*.header {
-		background-color: green;
-	}*/
-
 	.info {
 		padding: 159px 0 0 0;
 	}
@@ -1071,10 +1092,6 @@
 	.button {
 		max-width: 100px;
 	}
-
-	/*.header {
-		background-color: yellow;
-	}*/
 
 	.info__title {
 		font-size: 31.33px;
@@ -1208,16 +1225,20 @@
 
 	.connection__title {
 		margin-bottom: 35px;
+		margin: 0 auto 35px auto;
+   		width: 244px;
+    	line-height: 40px;
 	}
 
 	.search-form__input {
 		padding: 20px 0 20px 20px;
+		font-size: 12px;
 	}
 
 	.button-small {
 		width: 80px;
 		height: 56px;
-		font-size: 18px;
+		font-size: 16px;
 	}
 
 	.footer {
@@ -1232,12 +1253,13 @@
 		padding: 20px 0 20px 20px;
     	height: 56px;
     	width: 280px;
+    	font-size: 12px;
 	}
 
 	.search-email__button {
 		width: 110px;
     	height: 56px;
-    	font-size: 18px;
+    	font-size: 16px;
 	} 
 }
 
