@@ -8,6 +8,10 @@
 	outline: none; /*это для того чтобы убрать границу(контур) у элемента при фокусе*/
  } 
 
+body {
+	overflow-x: hidden;
+}
+
 .container {
 	max-width: 1160px;
 	margin: 0 auto;
